@@ -18,7 +18,6 @@ sha256sums=('SKIP'
 
 pkgver() {
 	cd "$srcdir/$_pkgname"
-
 	git describe --long --match desc/\* | cut -d '/' -f 2- | sed -e 's/\(.*\)-\([^-]*\)-\([^-]*\)/\1.r\2.\3/'
 }
 
@@ -34,6 +33,7 @@ build() {
 
 package() {
 	cd "$srcdir/$_pkgname"
-	install -Dm755 build/bin/xoreos "$pkgdir"/usr/bin
+	install -dm757 "$pkgdir"/usr/bin
+	install -m755 build/bin/xoreos "$pkgdir"/usr/bin
 	install -Dm644 dists/win32/xoreos.ico "$pkgdir"/usr/share/pixmaps/xoreos.ico
 }
