@@ -34,7 +34,6 @@ build() {
 
 package() {
 	cd "$srcdir/$_pkgname"
-
-	make DESTDIR="$pkgdir/" install
+	install -Dm755 build/xoreos "$pkgdir"/usr/bin
 	install -Dm644 dists/win32/xoreos.ico "$pkgdir"/usr/share/pixmaps/xoreos.ico
 }
