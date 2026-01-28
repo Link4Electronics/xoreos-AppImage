@@ -9,7 +9,7 @@ arch=('x86_64' 'aarch64')
 url="https://xoreos.org/"
 license=('GPL3')
 depends=('zlib' 'xz' 'libxml2' 'boost' 'boost-libs' 'sdl2' 'freetype2' 'openal' 'libmad' 'libogg' 'libvorbis' 'faad2' 'xvidcore' 'libvpx')
-makedepends=('git')
+makedepends=('git' 'cmake')
 options=('!debug' 'strip')
 source=('git+https://github.com/xoreos/xoreos'
 		'cmakeboost1.89-fix.patch')
