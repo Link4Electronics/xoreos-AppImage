@@ -42,4 +42,3 @@ cmake .. \
     -DCMAKE_INSTALL_PREFIX="/usr"
 make -j$(nproc)
 mv -v bin/xoreos /usr/bin
-cp -rv ../dists/win32/xoreos.ico /usr/share/pixmaps/xoreos.ico
