@@ -11,6 +11,7 @@ pacman -Syu --noconfirm \
     boost-libs \
     cmake      \
     faad2      \
+    glew       \
     libdecor   \
     libmad     \
     libvpx     \
