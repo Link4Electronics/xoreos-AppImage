@@ -17,7 +17,7 @@
 
 </div>
 
-### ⚠️ Usage example `./xoreos-x-anylinux-x.AppImage -p/path/to/game/` ⚠️
+### ⚠️ Usage example `./xoreos-x-Anylinux-x.AppImage -p/path/to/game/` ⚠️
 
 ---
 
