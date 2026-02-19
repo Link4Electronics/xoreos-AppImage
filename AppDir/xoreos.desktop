@@ -4,5 +4,6 @@ Name=xoreos
 Comment="A reimplementation of BioWare's Aurora engine"
 Exec=xoreos
 Icon=xoreos
+StartupWMClass=xoreos
 Terminal=false
 Categories=Game;Action;Adventure
