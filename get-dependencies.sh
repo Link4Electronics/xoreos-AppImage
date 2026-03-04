@@ -34,12 +34,12 @@ VERSION="$(git ls-remote "$REPO" HEAD | cut -c 1-9 | head -1)"
 git clone "$REPO" ./xoreos
 echo "$VERSION" > ~/version
 
+mkdir -p ./AppDir/bin
 cd ./xoreos
 patch -Np1 -i "../cmakeboost1.89-fix.patch"
 mkdir -p build && cd build
 cmake .. \
     -DCMAKE_BUILD_TYPE=Release \
-    -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
-    -DCMAKE_INSTALL_PREFIX="/usr"
+    -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 make -j$(nproc)
-mv -v bin/xoreos /usr/bin
+mv -v bin/xoreos ../../AppDir/bin
