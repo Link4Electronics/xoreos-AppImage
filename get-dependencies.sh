@@ -36,7 +36,6 @@ echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin
 cd ./xoreos
-patch -Np1 -i "../cmakeboost1.89-fix.patch"
 mkdir -p build && cd build
 cmake .. \
     -DCMAKE_BUILD_TYPE=Release \
