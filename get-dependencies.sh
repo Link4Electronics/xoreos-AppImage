@@ -23,7 +23,7 @@ echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
-echo "Making nightly build of xoreos..."
+echo "Building xoreos..."
 echo "---------------------------------------------------------------"
 REPO="https://github.com/xoreos/xoreos"
 VERSION="$(git ls-remote "$REPO" HEAD | cut -c 1-9 | head -1)"
