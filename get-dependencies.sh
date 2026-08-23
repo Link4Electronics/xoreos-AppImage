@@ -12,7 +12,6 @@ pacman -Syu --noconfirm \
     cmake      \
     faad2      \
     glew       \
-    libdecor   \
     libmad     \
     libvpx     \
     openal     \
@@ -21,7 +20,7 @@ pacman -Syu --noconfirm \
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
-get-debloated-pkgs --add-common --prefer-nano
+get-debloated-pkgs --add-common --prefer-nano libdecor-mini
 
 echo "Building xoreos..."
 echo "---------------------------------------------------------------"
